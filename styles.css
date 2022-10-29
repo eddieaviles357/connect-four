@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #4d54ff8c, rgb(226 126 255 / 51%));
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    
+    font-size: 30px;
+    text-align: center;
+    /* background: linear-gradient(to right, #4d54ff8c, rgb(226 126 255 / 51%)); */
+}
+
+.connect-four-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    
+    overflow: visible;
+    /* background-color: #000000; */
+
+}
+
+.start-and-restart {
+    margin: 0 auto 15px auto;
+}
+
+#restartBtn {
+    margin: 0 10px;
+    padding: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+    
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid black;
+    
+    cursor: pointer;
+    
+    box-shadow: 0 10px 10px 1px black;
+    transition: background .3s;
+
+    visibility: hidden;
+}
+
+#restartBtn:hover {
+    background-color: #45ba45;
+}
+
+.row {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(168, 168, 168);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 80px;
+    height: auto;
+
+    margin: 0 10px;
+}
+
+.column:hover {
+    opacity: 0.4;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.column:hover::after {
+    content: '\25BE';
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: -80px;
+    left: 10px;
+    /* border: 2px solid black;
+    border-radius: 100px; */
+    height: 50px;
+    width: 80px;
+    z-index: 1;
+    overflow: hidden;
+    background-color: inherit;
+}
+
+.choosen-player1 {
+    background-color: #ff0000;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+.choosen-player2 {
+    background-color: #f6ff00;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+.currentPlayerDisplay {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.span-player {
+    height: auto;
+    font-size: 24px;
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 0;
+}

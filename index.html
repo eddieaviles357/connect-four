@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Testing -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.3.0/boot.js"></script> -->
+    <!-- Testing End -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Connect 4
+        </h1>
+        <span class="span-curr"><span class="span-player">Current Player</span></span><span class="currentPlayerDisplay"></span>
+        <div class="start-and-restart">
+            <button id="restartBtn">Restart</button>
+        </div>
+        <div class="connect-four-container">
+            
+            <div class="column-1 column">
+                <span class="row-1 row"></span>
+                <span class="row-2 row"></span>
+                <span class="row-3 row"></span>
+                <span class="row-4 row"></span>
+                <span class="row-5 row"></span>
+                <span class="row-6 row"></span>
+            </div>
+            <div class="column-2 column">
+                <span class="row-1 row"></span>
+                <span class="row-2 row"></span>
+                <span class="row-3 row"></span>
+                <span class="row-4 row"></span>
+                <span class="row-5 row"></span>
+                <span class="row-6 row"></span>
+            </div>
+            <div class="column-3 column">
+                <span class="row-1 row"></span>
+                <span class="row-2 row"></span>
+                <span class="row-3 row"></span>
+                <span class="row-4 row"></span>
+                <span class="row-5 row"></span>
+                <span class="row-6 row"></span>
+            </div>
+            <div class="column-4 column">
+                <span class="row-1 row"></span>
+                <span class="row-2 row"></span>
+                <span class="row-3 row"></span>
+                <span class="row-4 row"></span>
+                <span class="row-5 row"></span>
+                <span class="row-6 row"></span>
+            </div>
+            <div class="column-5 column">
+                <span class="row-1 row"></span>
+                <span class="row-2 row"></span>
+                <span class="row-3 row"></span>
+                <span class="row-4 row"></span>
+                <span class="row-5 row"></span>
+                <span class="row-6 row"></span>
+            </div>
+            <div class="column-6 column">
+                <span class="row-1 row"></span>
+                <span class="row-2 row"></span>
+                <span class="row-3 row"></span>
+                <span class="row-4 row"></span>
+                <span class="row-5 row"></span>
+                <span class="row-6 row"></span>
+            </div>
+            <div class="column-7 column">
+                <span class="row-1 row"></span>
+                <span class="row-2 row"></span>
+                <span class="row-3 row"></span>
+                <span class="row-4 row"></span>
+                <span class="row-5 row"></span>
+                <span class="row-6 row"></span>
+            </div>
+            
+        </div>
+    </div>
+    <script src="helpers.js"></script>
+    <!-- <script src="helpers.test.js"></script> -->
+    <script src="app.js"></script>
+</body>
+</html>
