@@ -36,6 +36,14 @@ const togglePlayer = () => {
 
 const resetGame = () => {
     columnsBoard = [[],[],[],[],[],[],[]];
+    rowsBoard = [
+        [0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0],
+        ]
     playerText.style.display = 'block';
     playerText.textContent = 'Player';
     restartBtn.style.visibility = 'hidden';
