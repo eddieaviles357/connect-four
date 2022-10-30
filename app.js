@@ -29,6 +29,10 @@ const connectGameHandler = (e) => {
     let target = e.target;
     let parent = target.parentElement;
 
+    if(restartBtn.style.visibility === '' || restartBtn.style.visibility === 'hidden') {
+        restartBtn.style.visibility = 'visible';
+    }
+    
     // check columns 1
     if(parent.classList[0] === 'column-1') {
         let col1 = columnsBoard[0];
