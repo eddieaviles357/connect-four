@@ -45,7 +45,6 @@ const resetGame = () => {
         [0,0,0,0,0,0,0],
         ]
     playerText.style.display = 'block';
-    playerText.textContent = 'Player';
     restartBtn.style.visibility = 'hidden';
     currentPlayer = 'red';
     playerDisplay.classList.remove('choosen-player2');
